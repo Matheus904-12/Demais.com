@@ -1,0 +1,215 @@
+!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Ideais - PRONA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="bandeira_povo_a-removebg-preview.png">
+  <style>
+    /* CSS inline */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .background {
+      background: url('') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      position: relative;
+      z-index: -1;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5);
+      z-index: -1;
+    }
+
+    .header {
+      background-color: #057d46
+
+;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Barra de navegação */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #172d7c;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 50px;
+      z-index: 9999;
+      width: 100vw;
+    }
+
+    .navbar__logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar__logo img {
+      height: 50px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    .navbar__logo h1 {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar__menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .navbar__menu a {
+      color: #fff;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin: 0 20px;
+      padding: 10px 0;
+      position: relative;
+    }
+
+    .navbar__menu a:hover {
+      color: #f4d30c;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .navbar__menu a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      width: 100%;
+      background-color: #fff;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar__menu a:hover::after {
+      transform: scaleX(1);
+    }
+
+    body {
+  color: rgb(255, 255, 255);
+}
+
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .title {
+      text-align: center;
+      font-size: 24px;
+      padding: 20px 0;
+    }
+    .separator {
+      border-top: 1px solid #000;
+      margin: 20px 0;
+    }
+    .text-section {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+    .text-section p {
+      width: 23%;
+    }
+    .video-catalog {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+      margin: 20px 0;
+    }
+    .video {
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+      position: relative;
+    }
+    .video iframe {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__logo">
+      <img src="Prona 2.0.png" alt="Logo">
+      <h1>PRONA</h1>
+    </div>
+    <div class="navbar__menu">
+      <a href="Início.html">Início</a>
+      <a href="Ideais.html">Ideais</a>
+      <a href="Memorial.html">Memorial</a>
+      <a href="Discussão.html">Discussão</a>
+       <a href="Referências.html">Referências</a>
+      <a href="Cadastro.html">Cadastre-se</a>
+    </div>
+  </nav>
+  <h1 class="title">Ideais</h1>
+  <div class="separator"></div>
+  <div class="text-section">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in vehicula nisl. Morbi ac nunc eleifend, convallis metus eu, lobortis massa. Quisque id magna vitae massa luctus congue in ac lacus. Integer placerat rutrum orci, ac auctor nulla tempus vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum malesuada nulla purus, in blandit nisl ullamcorper vel. Curabitur mattis tellus et dolor volutpat fermentum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in vehicula nisl. Morbi ac nunc eleifend, convallis metus eu, lobortis massa. Quisque id magna vitae massa luctus congue in ac lacus. Integer placerat rutrum orci, ac auctor nulla tempus vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum malesuada nulla purus, in blandit nisl ullamcorper vel. Curabitur mattis tellus et dolor volutpat fermentum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in vehicula nisl. Morbi ac nunc eleifend, convallis metus eu, lobortis massa. Quisque id magna vitae massa luctus congue in ac lacus. Integer placerat rutrum orci, ac auctor nulla tempus vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum malesuada nulla purus, in blandit nisl ullamcorper vel. Curabitur mattis tellus et dolor volutpat fermentum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in vehicula nisl. Morbi ac nunc eleifend, convallis metus eu, lobortis massa. Quisque id magna vitae massa luctus congue in ac lacus. Integer placerat rutrum orci, ac auctor nulla tempus vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum malesuada nulla purus, in blandit nisl ullamcorper vel. Curabitur mattis tellus et dolor volutpat fermentum.</p>
+  </div>
+  <div class="separator"></div>
+  <div class="video-catalog">
+    <div class="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/video1" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/video2" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/video3" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/video4" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+    
+    
+    <p class="os-princpios-do-prona-jhd" id="39:220">Os Princípios do PRONA</p>
+    </div>
+  
+  
+    <div class="floating-buttons">
+      <div class="floating-buttons">
+        <a href="https://api.whatsapp.com/your-whatsapp-link" class="whatsapp-button" target="_blank"><i class="fab fa-whatsapp"></i> T</a>
+        <a href="https://www.facebook.com/your-facebook-page" class="facebook-button" target="_blank"><i class="fab fa-facebook"></i> F</a>
+      </div>
+      
+    </div>
+  </body>
+   </html>  

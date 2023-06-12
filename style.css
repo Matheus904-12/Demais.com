@@ -1,0 +1,2398 @@
+* {
+  scale: 1;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 10px;
+  }
+}
+
+/* Adicione mais regras CSS conforme necessário para diferentes resoluções */
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #108b18;
+    color: white;
+    z-index: 1;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 93px;
+    padding: 0 20px;
+  }
+  
+  .navbar-brand img {
+    width: 60px;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .navbar-nav {
+    display: fixed;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    margin: 0 10px;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #e6f2ff;
+  }
+  /* Barra de navegação */
+header {
+    background-color: #e52427; /* vermelho PRONA */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  nav {
+    margin-right: 2rem;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  li {
+    margin: 0 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  a:hover {
+    color: #ffc107; /* amarelo PRONA */
+  }
+  
+  /* Logotipo */
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.2s;
+  }
+  
+  .logo img:hover {
+    transform: rotate(360deg);
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Definitivo  */ 
+  .image {
+    width: 400px;
+    height: 600px;
+    
+  }
+  
+.teste {
+  text-align: center;
+}
+
+  .text {
+    width: 70%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  body {
+  background: linear-gradient(to right, #ffffff, #ffffff);
+}
+
+/* .barra-separacao {
+  width: 96%;
+  height: 1px;
+  background-color: #172D7C;
+  margin: 0 auto;
+} */
+
+body {
+  color: white;
+}
+
+.paragrafo {
+  font-size: 10;
+}
+
+.elemento {
+  margin-bottom: 20px;
+}
+
+/* floating-buttons.css */
+
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.floating-buttons a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button {
+  background-color: #00bcf0;
+}
+
+.facebook-button {
+  background-color: #1877F2;
+}
+
+.floating-buttons a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*
+  Variáveis
+*/
+
+:root {
+  --main-color: #407bff;
+  --link-color: #666666;
+  --text1: #999999;
+  --highligth-text: #333333;
+  --input-text: #555555;
+  --white-color: #FFFFFF;
+  --point-list: #CCCCCC;
+  --line-input: #D9D9D9;
+}
+
+/*
+  Fontes
+*/
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+}
+
+/*
+  Zerar estilos
+*/
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	font-family: Poppins-Regular, sans-serif;
+}
+
+ul, li {
+	margin: 0px;
+	list-style-type: none;
+}
+
+input, button {
+	outline: none !important;
+	border: none;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+/*
+  Utilitários
+*/
+
+.text1 {
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  color: var(--text1);
+  line-height: 1.5;
+}
+
+.text2 {
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  color: var(--main-color);
+  line-height: 1.5;
+}
+
+.margin-bottom-35 {
+  margin-bottom: 35px;
+}
+
+.margin-top-35 {
+  margin-top: 35px;
+}
+
+.margin-bottom-8 {
+  margin-bottom: 8px;
+}
+
+.margin-top-8 {
+  margin-top: 8px;
+}
+
+.margin-left-50 {
+  margin-left: 50px;
+}
+
+/*
+  Login
+*/
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-login {
+  width: 100%;  
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: var(--white-color);  
+}
+
+.wrap-login {
+  width: 370px;
+  margin-right: 50px;
+  background: var(--white-color);
+}
+
+/*
+  Formulário
+*/
+
+.login-form {
+  width: 100%;
+}
+
+.login-form-title {
+  display: block;
+  font-family: Poppins-Bold;
+  font-size: 39px;
+  color: var(--highligth-text);
+  line-height: 1.2;
+  text-align: center;
+}
+
+/*
+  Input
+*/
+
+.wrap-input {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid var(--line-input);
+}
+
+.input-form {
+  font-family: Poppins-SemiBold;
+  font-size: 18px;
+  color: var(--input-text);
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+  height: 52px;
+  background: transparent;
+  padding: 0 5px;
+}
+
+.focus-input-form {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-input-form::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.4s;
+  background: var(--main-color);
+}
+
+.focus-input-form::after {
+  font-family: Poppins-Medium;
+  font-size: 18px;
+  color: var(--text1);
+  line-height: 1.2;
+  content: attr(data-placeholder);
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 15px;
+  left: 0px;
+  padding-left: 5px;
+  transition: all 0.4s;
+}
+
+.input-form:focus + .focus-input-form::after {
+  top: -20px;
+  font-size: 15px;
+}
+
+.input-form:focus + .focus-input-form::before {
+  width: 100%;
+}
+
+.has-val.input-form + .focus-input-form::after {
+  top: -20px;
+  font-size: 15px;
+}
+
+.has-val.input-form + .focus-input-form::before {
+  width: 100%;
+}
+
+/*
+  Botão
+*/
+
+.container-login-form-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-form-btn {
+  font-family: Poppins-Medium;
+  font-size: 16px;
+  color: var(--white-color);
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+
+.login-form-btn:hover  {
+  background-color: var(--highligth-text);
+}
+
+/*
+  Links - Login utils
+*/
+
+a {
+	font-family: Poppins-Regular;
+	font-size: 14px;
+	line-height: 1.7;
+	color: var(--link-color);
+	margin: 0px;
+	transition: all 0.4s;
+}
+
+a:focus {
+	outline: none !important;
+}
+
+a:hover {
+	text-decoration: none;
+  color: var(--highligth-text);
+}
+
+/*
+  Login utils
+*/
+
+.login-utils {
+  margin-top: 20px;
+}
+
+.login-utils li {
+  position: relative;
+  padding-left: 16px;
+}
+
+.login-utils li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--point-list);
+  top: 45%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.separator {
+  
+  margin-bottom: 40px;
+}
+
+.content {
+  text-align: left;
+}
+
+.text-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-left: 50px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.image-box {
+  position: relative;
+  width: 30%;
+  padding: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+
+
+/* Estilos gerais do site */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.incio-bJK {
+  align-items: flex-end;
+  background-color: #ffffff;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  .auto-group-mc59-rdZ {
+    flex-shrink: 0;
+    height: 45rem;
+    position: relative;
+    width: 183.1rem;
+  
+    .image-2-Kn3 {
+      height: 48.3rem;
+   margin-left: 2070px;
+      object-fit: cover;
+      position: absolute;
+      top: 0rem;
+      vertical-align: top;
+      width: 51rem;
+    }
+    
+    .seja-bem-vindo-a-fan-page-do-prona-um-local-que-pretende-expor-o-legado-do-prona-e-seu-fundador-o-polmata-dr-enas-carneiro-por-meio-de-imagens-variadas-textos-interativos-e-uma-pgina-interativa-para-que-vocs-possam-comentar-tudo-isso-de-forma-totalmente-educativa-aproveite-RaB {
+      color: #000000;
+      font-family: Tienne, 'Source Sans Pro';
+      font-size: 1.5rem;
+      font-weight: 400;
+      height: 32.2rem;
+      left: 92rem;
+      line-height: 1.2575;
+      position: absolute;
+      top: 20.6rem;   
+      width: 40rem;
+    }
+    .rectangle-18-7bR {
+      background-color: #ffe311;
+      border-radius: 1rem;
+      cursor: pointer;
+      height: 2.6rem;
+      left: 92rem;
+      position: absolute;
+      top: 32.9rem;
+      width: 8.4rem;
+    }
+    .entrar-QaX {
+      color: #ffffff;
+      font-family: Times New Roman, 'Source Sans Pro';
+      font-size: 2.1rem;
+      font-weight: 600;
+      height: 2.6rem;
+      left: 92rem;
+      line-height: 1.2575;
+      position: absolute;
+      text-align: center;
+      top: 32.9rem;
+      white-space: nowrap;
+      width: 8.4rem;
+    }
+    .prona-resgatando-um-pedao-da-histria-e-poltica-do-brasil-Jfu {
+      color: #000000;
+      font-family: Times New Roman, 'Source Sans Pro';
+      font-size: 2.1rem;
+      font-weight: 400;
+      height: 9.1rem;
+      left: 92rem;
+      line-height: 1.2575;
+      position: fixed;
+      top: 12.8rem;
+      width: 52.2rem;
+    }
+    /*
+    .rectangle-1-atK {
+      background-color: #2e276d;
+      box-shadow: 0 0.6rem 2.6rem rgba(0, 0, 0, 0.25);
+      height: 8rem;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 144rem;
+   */
+    }
+    .image-3-nzP {
+      box-shadow: 0.5rem 0 3rem rgba(0, 0, 0, 0.25);
+      height: 77.2rem;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 86.5rem;
+    }
+    .incio-7Fy {
+      align-items: center;
+      color: #ffffff;
+      display: flex;
+      font-family: Anton, 'Source Sans Pro';
+      font-size: 2.4rem;
+      font-weight: 400;
+      height: 100vh;
+      justify-content: center;
+      left: 22.35rem;
+      line-height: 1.5075;
+      position: absolute;
+      top: 2.2rem;
+      white-space: nowrap;
+      width: 100vw;
+    }
+    .memorial-PjH {
+      align-items: center;
+      color: #ffffff;
+      display: flex;
+      font-family: Anton, 'Source Sans Pro';
+      font-size: 2.4rem;
+      font-weight: 400;
+      height: 3.7rem;
+      justify-content: center;
+      left: 43.8rem;
+      line-height: 1.5075;
+      position: absolute;
+      top: 2.2rem;
+      white-space: nowrap;
+      width: 9.6rem;
+    }
+    .ideais-tR9 {
+      align-items: center;
+      color: #ffffff;
+      display: flex;
+      font-family: Anton, 'Source Sans Pro';
+      font-size: 2.4rem;
+      font-weight: 400;
+      height: 3.7rem;
+      justify-content: center;
+      left: 32.7rem;
+      line-height: 1.5075;
+      position: absolute;
+      top: 2.3rem;
+      white-space: nowrap;
+      width: 5.6rem;
+    }
+    .discusses-mjq {
+      align-items: center;
+      color: #ffffff;
+      display: flex;
+      font-family: Anton, 'Source Sans Pro';
+      font-size: 2.4rem;
+      font-weight: 400;
+      height: 3.7rem;
+      justify-content: center;
+      left: 60.5rem;
+      line-height: 1.5075;
+      position: absolute;
+      top: 2.3rem;
+      white-space: nowrap;
+      width: 10.6rem;
+    }
+    .image-9-sH5 {
+      height: 6.3rem;
+      left: 5.3rem;
+      object-fit: cover;
+      position: absolute;
+      top: 0.7rem;
+      vertical-align: top;
+      width: 6.8rem;
+    }
+    .incio-CaF {
+      align-items: center;
+      color: #ffffff;
+      display: flex;
+      font-family: Anton, 'Source Sans Pro';
+      font-size: 2.4rem;
+      font-weight: 400;
+      height: 3.7rem;
+      justify-content: center;
+      left: 22.35rem;
+      line-height: 1.5075;
+      position: absolute;
+      top: 2.2rem;
+      white-space: nowrap;
+      width: 5.2rem;
+    }
+    .memorial-JdH {
+      align-items: center;
+      color: #ffffff;
+      display: flex;
+      font-family: Anton, 'Source Sans Pro';
+      font-size: 2.4rem;
+      font-weight: 400;
+      height: 3.7rem;
+      justify-content: center;
+      left: 43.8rem;
+      line-height: 1.5075;
+      position: absolute;
+      top: 2.2rem;
+      white-space: nowrap;
+      width: 9.6rem;
+    }
+    .ideais-cP5 {
+      align-items: center;
+      color: #ffffff;
+      cursor: pointer;
+      display: flex;
+      font-family: Anton, 'Source Sans Pro';
+      font-size: 2.4rem;
+      font-weight: 400;
+      height: 3.7rem;
+      justify-content: center;
+      left: 32.7rem;
+      line-height: 1.5075;
+      position: absolute;
+      top: 2.3rem;
+      white-space: nowrap;
+      width: 5.6rem;
+    }
+    .discusses-Uw5 {
+      align-items: center;
+      color: #ffffff;
+      display: flex;
+      font-family: Anton, 'Source Sans Pro';
+      font-size: 2.4rem;
+      font-weight: 400;
+      height: 3.7rem;
+      justify-content: center;
+      left: 60.5rem;
+      line-height: 1.5075;
+      position: absolute;
+      top: 2.3rem;
+      white-space: nowrap;
+      width: 10.6rem;
+    }
+    .line-6-7UF {
+      background-color: #ffffff;
+      height: 6rem;
+      left: 16.4rem;
+      position: absolute;
+      top: 1rem;
+      width: 0.1rem;
+    }
+    /
+    .iconoir-nav-arrow-down-qv3 {
+      height: 1.525rem;
+      left: 136.35rem;
+      object-fit: contain;
+      position: absolute;
+      top: 3.2875rem;
+      vertical-align: top;
+      width: 3.1rem;
+    */
+    }
+  }
+  .auto-group-v6rz-ZLF {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    padding: 6.1rem 9.3rem 2.2rem 8.5rem;
+    width: 100%;
+
+    .auto-group-q6ur-GkT {
+      background-color: #007f0e;
+      border-radius: 1rem;
+      box-sizing: border-box;
+      flex-shrink: 0;
+      height: 9.5rem;
+      margin-bottom: 7rem;
+      padding: 1rem 1rem 1rem 1.1rem;
+      width: 110%;
+      right: 70% ;
+
+      .um-partido-poltico-brasileiro-que-marcou-a-histria-com-sua-proposta-inovadora-e-promessas-ousadas-xtB {
+        color: #ffffff;
+        font-family: Times New Roman, 'Source Sans Pro';
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 1.2575;
+        max-width: 115.2rem;
+        text-align: center;
+      }
+    }
+    .auto-group-jdum-2d9 {
+      align-items: flex-end;
+      display: flex;
+      flex-shrink: 0;
+      margin: 0rem 2.5rem 5.3rem 4.6rem;
+   width: 90rem;
+
+      .image-8-9hm {
+        border-radius: 1rem;
+        flex-shrink: 0;
+        height: 18.7rem;
+        margin: 0rem 5rem 3.2rem 1rem;
+        object-fit: cover;
+        vertical-align: top;
+        width: 18.7rem;
+      }
+      .o-partido-da-reedificao-da-ordem-nacional-prona-foi-um-partido-poltico-brasileiro-fundado-pelo-dr-enas-ferreira-carneiro-em-1989-e-que-participou-ativamente-nas-eleies-presidenciais-de-1989-1994-e-1998-este-partido-nacionalista-apoiava-o-estado-forte-uma-economia-brasileira-sem-influncia-externa-o-conservadorismo-e-o-moralismo-rejeitando-a-classificao-de-esquerda-direita-e-identificando-se-s-como-nacionalista-eeX {
+        color: #000000;
+        flex-shrink: 0;
+        font-family: Times New Roman, 'Source Sans Pro';
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.2575;
+        max-width: 54rem;
+        flex-wrap: wrap;
+        margin: 0 0 7rem 0rem;
+      }
+    }
+    .rectangle-2-YtK {
+      background-color: #2e276d;
+      flex-shrink: 0;
+      height: 0.1rem;
+      margin: 0rem 10.5rem 6.1rem 8.8rem;
+      width: calc(100% - -7rem);
+    }
+    .auto-group-mxgj-s9u {
+      align-items: flex-start;
+      display: flex;
+      flex-shrink: 0;
+      height: 30rem;
+      margin: 0rem 6.9rem 0rem 11.5rem;
+      width: calc(100% - 18.4rem);
+
+      .auto-group-7vgf-yTq {
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        height: 100%;
+        margin-right: 12rem;
+
+        .ellipse-4-gt3 {
+          flex-shrink: 0;
+          height: 0.5rem;
+          margin: 0rem 7.741rem 4.3rem 0rem;
+          object-fit: contain;
+          vertical-align: top;
+          width: 0.5588rem;
+        }
+        .o-fundador-foi-dr-enas-ferreira-carneiro-que-se-candidatou-pela-primeira-vez-nas-eleies-em-1989-no-qual-com-duas-inseres-dirias-de-15-segundos-no-horrio-eleitoral-gratuito-enas-que-at-ento-era-um-candidato-desconhecido-ficou-famoso-em-todo-pas-por-seus-discursos-enfticos-e-rpidos-que-defendiam-suas-propostas-finalizando-com-a-icnica-frase-meu-nome-enas-ys9 {
+          color: #000000;
+          flex-shrink: 0;
+          font-family: Times New Roman, 'Source Sans Pro';
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 1.2575;
+          max-width: 54.4rem;
+          margin: 2.5rem -1rem 0 -15rem;
+        }
+      }
+      .b47a7b69c09815314226463x4md-1-hgf {
+        border-radius: 1rem;
+        flex-shrink: 0;
+        height: 25rem;
+        object-fit: cover;
+        vertical-align: top;
+        width: auto;
+      }
+    }
+  }
+  .auto-group-rcfv-cHq {
+    align-items: center;
+    background-color: #2e276d;
+    box-sizing: border-box;
+    display: flex;
+    flex-shrink: 0;
+    padding: 1rem 15rem 1rem 20rem;
+    width: 100%;
+
+    .prona-jdM {
+      color: #ffffff;
+      flex-shrink: 0;
+      font-family: Tienne, 'Source Sans Pro';
+      font-size: 1.2rem;
+      font-weight: 900;
+      line-height: 1.3425;
+      margin: 0rem 6.6rem 0.103rem 0rem;
+      white-space: nowrap;
+    }
+    .line-8-rCB {
+      background-color: #ffffff;
+      flex-shrink: 0;
+      height: 6.8029rem;
+      margin-right: 14.6rem;
+      width: 0.1rem;
+    }
+    .partido-da-reedificao-da-ordem-nacional-BET {
+      align-items: center;
+      color: #ffffff;
+      display: flex;
+      flex-shrink: 0;
+      font-family: Times New Roman, 'Source Sans Pro';
+      font-size: 1.2rem;
+      font-weight: 400;
+      justify-content: center;
+      line-height: 1.2575;
+      margin-bottom: 0.1029rem;
+      white-space: nowrap;
+    }
+    .ideais-BKZ {
+  background-color: #ffffff;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  height: 232.8rem;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  .auto-group-a81y-mYf {
+    align-items: center;
+    background-color: #2e276d;
+    box-shadow: 0 -0.5rem 5.8rem rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    display: flex;
+    height: 21.2rem;
+    left: 0;
+    padding: 7.2rem 25rem 7.197rem 19rem;
+    position: absolute;
+    top: 211.6rem;
+    width: 144rem;
+
+    .prona-fAB {
+      color: #ffffff;
+      flex-shrink: 0;
+      font-family: Tienne, 'Source Sans Pro';
+      font-size: 3.2rem;
+      font-weight: 900;
+      line-height: 1.3425;
+      margin: 0rem 6.6rem 0.103rem 0rem;
+      white-space: nowrap;
+    }
+    .line-8-Jiw {
+      background-color: #ffffff;
+      flex-shrink: 0;
+      height: 6.8029rem;
+      margin-right: 14.6rem;
+      width: 0.1rem;
+    }
+    .partido-da-reedificao-da-ordem-nacional-2ew {
+      align-items: center;
+      color: #ffffff;
+      display: flex;
+      flex-shrink: 0;
+      font-family: Times New Roman, 'Source Sans Pro';
+      font-size: 3.2rem;
+      font-weight: 400;
+      justify-content: center;
+      line-height: 1.2575;
+      margin-bottom: 0.1029rem;
+      white-space: nowrap;
+    }
+  }
+  .auto-group-4mjq-fhu {
+    align-items: center;
+    background-color: #2e276d;
+    box-shadow: 0 0.6rem 2.6rem rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    display: flex;
+    height: 8rem;
+    left: 0;
+    padding: 0.7rem 3.55rem 1rem 5.3rem;
+    position: absolute;
+    top: 0;
+    width: 144rem;
+  }
+    .auto-group-xqxu-iw5 {
+      background-image: url('/api/try-prod-us-east-2-first-cluster/projects/M7jjK5bwQt2WRXDgWXtrsK/files/image/89f397cf477663221a5fc1f94adfe39d162cc27e');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      flex-shrink: 0;
+      height: 100%;
+      margin-right: 4.3rem;
+    }
+      .image-9-5Fq {
+        height: 6.3rem;
+        object-fit: cover;
+        vertical-align: top;
+        width: 6.8rem;
+      }
+    }
+    .line-6-k75 {
+      background-color: #ffffff;
+      flex-shrink: 0;
+      height: 6rem;
+      margin: 0.3rem 5.85rem 0rem 0rem;
+      width: 0.1rem;
+    }
+    .auto-group-pkls-CUs {
+      flex-shrink: 0;
+      height: calc(100% - 2.6rem);
+      margin: 1.5rem 5.15rem 1.1rem 0rem;
+      position: relative;
+      width: 5.2rem;
+
+      .incio-X1M {
+        align-items: center;
+        color: #ffffff;
+        display: flex;
+        font-family: Anton, 'Source Sans Pro';
+        font-size: 2.4rem;
+        font-weight: 400;
+        height: 3.7rem;
+        justify-content: center;
+        left: 0;
+        line-height: 1.5075;
+        position: absolute;
+        top: 0;
+        white-space: nowrap;
+        width: 5.2rem;
+      }
+      .incio-aVR {
+        align-items: center;
+        color: #ffffff;
+        cursor: pointer;
+        display: flex;
+        font-family: Anton, 'Source Sans Pro';
+        font-size: 2.4rem;
+        font-weight: 400;
+        height: 3.7rem;
+        justify-content: center;
+        left: 0;
+        line-height: 1.5075;
+        position: absolute;
+        top: 0;
+        white-space: nowrap;
+        width: 5.2rem;
+      }
+    }
+    .auto-group-45tw-5SB {
+      flex-shrink: 0;
+      height: calc(100% - 2.6rem);
+      margin: 1.6rem 5.5rem 1rem 0rem;
+      position: relative;
+      width: 5.6rem;
+
+      .ideais-kYK {
+        align-items: center;
+        color: #ffffff;
+        display: flex;
+        font-family: Anton, 'Source Sans Pro';
+        font-size: 2.4rem;
+        font-weight: 400;
+        height: 3.7rem;
+        justify-content: center;
+        left: 0;
+        line-height: 1.5075;
+        position: absolute;
+        top: 0;
+        white-space: nowrap;
+        width: 5.6rem;
+      }
+      .ideais-Svw {
+        align-items: center;
+        color: #ffffff;
+        display: flex;
+        font-family: Anton, 'Source Sans Pro';
+        font-size: 2.4rem;
+        font-weight: 400;
+        height: 3.7rem;
+        justify-content: center;
+        left: 0;
+        line-height: 1.5075;
+        position: absolute;
+        top: 0;
+        white-space: nowrap;
+        width: 5.6rem;
+      }
+    }
+    .auto-group-odqf-Ac3 {
+      flex-shrink: 0;
+      height: calc(100% - 2.6rem);
+      margin: 1.5rem 7.1rem 1.1rem 0rem;
+      position: relative;
+      width: 9.6rem;
+
+      .memorial-hby {
+        align-items: center;
+        color: #ffffff;
+        display: flex;
+        font-family: Anton, 'Source Sans Pro';
+        font-size: 2.4rem;
+        font-weight: 400;
+        height: 3.7rem;
+        justify-content: center;
+        left: 0;
+        line-height: 1.5075;
+        position: absolute;
+        top: 0;
+        white-space: nowrap;
+        width: 9.6rem;
+      }
+      .memorial-m63 {
+        align-items: center;
+        color: #ffffff;
+        cursor: pointer;
+        display: flex;
+        font-family: Anton, 'Source Sans Pro';
+        font-size: 2.4rem;
+        font-weight: 400;
+        height: 3.7rem;
+        justify-content: center;
+        left: 0;
+        line-height: 1.5075;
+        position: absolute;
+        top: 0;
+        white-space: nowrap;
+        width: 9.6rem;
+      }
+    }
+    .auto-group-cn2f-cMZ {
+      flex-shrink: 0;
+      height: calc(100% - 2.6rem);
+      margin: 1.6rem 66.25rem 1rem 0rem;
+      position: relative;
+      width: 10.6rem;
+
+      .discusses-YW7 {
+        align-items: center;
+        color: #ffffff;
+        display: flex;
+        font-family: Anton, 'Source Sans Pro';
+        font-size: 2.4rem;
+        font-weight: 400;
+        height: 3.7rem;
+        justify-content: center;
+        left: 0;
+        line-height: 1.5075;
+        position: absolute;
+        top: 0;
+        white-space: nowrap;
+        width: 10.6rem;
+      }
+      .discusses-qEK {
+        align-items: center;
+        color: #ffffff;
+        display: flex;
+        font-family: Anton, 'Source Sans Pro';
+        font-size: 2.4rem;
+        font-weight: 400;
+        height: 3.7rem;
+        justify-content: center;
+        left: 0;
+        line-height: 1.5075;
+        position: absolute;
+        top: 0;
+        white-space: nowrap;
+        width: 10.6rem;
+      }
+    }
+    .iconoir-nav-arrow-down-vmZ {
+      flex-shrink: 0;
+      height: 1.525rem;
+      margin-top: 0.6rem;
+      object-fit: contain;
+      vertical-align: top;
+      width: 3.1rem;
+    }
+  }
+  .auto-group-qbw3-cPV {
+    height: 194.7rem;
+    left: 0;
+    position: fixed;
+    top: 16.9rem;
+    width: 144rem;
+  }
+    .auto-group-qgvz-wAs {
+      align-items: center;
+      display: flex;
+      height: 25rem;
+      left: 6.3rem;
+      position: fixed;
+      top: 105.8rem;
+      width: auto;
+    }
+      .image-25-Qq9 {
+        flex-shrink: 0;
+        height: 27em;
+        margin-right: 4.4rem;
+        object-fit: cover;
+        vertical-align: top;
+        width: auto;
+      }
+      .image-26-Kx7 {
+        flex-shrink: 0;
+        height: 27rem;
+        object-fit: cover;
+        vertical-align: top;
+        width: auto;
+      }
+    .auto-group-tc8k-eDh {
+      align-items: center;
+      display: flex;
+      height: 25rem;
+      left: 6.3rem;
+      position: fixed;
+      top: 152.7rem;
+      width: auto;
+
+      .image-27-a7M {
+        flex-shrink: 0;
+        height: 24rem;
+        margin-right: 4.4rem;
+        object-fit: cover;
+        vertical-align: top;
+        width: auto;
+      }
+      .image-28-UCj {
+        flex-shrink: 0;
+        height: 24rem;
+        object-fit: cover;
+        vertical-align: top;
+        width: auto;
+      }
+    }
+    .entrevistas-Dg7 {
+      color: #000000;
+      font-family: Tienne, 'Source Sans Pro';
+      font-size: 4rem;
+      font-weight: 400;
+      height: 5.4rem;
+      left: 7.6rem;
+      line-height: 1.3425;
+      position: absolute;
+      top: 93.5rem;
+      white-space: nowrap;
+      width: 23.3rem;
+    }
+    .auto-group-tqwj-4wd {
+      align-items: center;
+      display: flex;
+      height: 4.6rem;
+      left: 13.1rem;
+      position: absolute;
+      top: 4.9rem;
+      width: 120.4rem;
+    
+      .defesa-da-unidade-nacional-yYo {
+        color: #000000;
+        flex-shrink: 0;
+        font-family: Times New Roman, 'Source Sans Pro';
+        font-size: 2.2rem;
+        font-weight: 400;
+        line-height: 1.2575;
+        margin-right: 26.1rem;
+        white-space: nowrap;
+      }
+      .defesa-da-moral-ordem-e-tradio-79D {
+        color: #000000;
+        flex-shrink: 0;
+        font-family: Times New Roman, 'Source Sans Pro';
+        font-size: 2.2rem;
+        font-weight: 400;
+        line-height: 1.2575;
+        white-space: nowrap;
+      }
+    }
+    .auto-group-zwpf-Ejd {
+      align-items: flex-start;
+      display: flex;
+      height: 68.9rem;
+      left: 5.3rem;
+      position: relative;
+      top: 11.6rem;
+      width: 132rem;
+    
+      .Tideais {
+        color: #000000;
+        flex-shrink: 0;
+        font-family: Times New Roman, 'Source Sans Pro';
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.0666666667;
+        margin-right: 2.4rem;
+        max-width: 16rem;
+        flex: auto;
+      }
+      .auto-group-2qf9-ruR {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        height: 100%;
+        margin-right: 4rem;
+      }
+
+        .image-29-T23 {
+          flex-shrink: 0;
+          height: 30.2rem;
+          margin-right: 0.4rem;
+          object-fit: cover;
+          vertical-align: top;
+          width: 28.3rem;
+          background-image: url(https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiQwbKWoqz_AhWVBbkGHd_NDwwQwqsBegQICBAF&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dl3EU9bsFkAE&usg=AOvVaw0CwcoH4FmcS7CKUAEK-7pp);
+        }
+      }
+
+      .auto-group-dz2f-gJ7 {
+        flex-shrink: 0;
+        height: 68.1rem;
+        position: relative;
+        width: 30.1rem;
+
+        .image-30-Tbh {
+          height: 23.9rem;
+          left: 5.1rem;
+          object-fit: cover;
+          position: absolute;
+          top: 44.2rem;
+          vertical-align: top;
+          width: 25rem;
+        }
+      }
+
+    .line-15-jJK {
+      background-color: #000000;
+      height: 0.2rem;
+      left: 4.5rem;
+      position: absolute;
+      top: 34.8rem;
+      width: 80rem;
+    }
+    .line-16-347 {
+      background-color: #000000;
+      height: 0.2rem;
+      left: 4rem;
+      position: absolute;
+      top: 0.5rem;
+      width: 80.8023rem;
+    }
+  
+  .os-princpios-do-prona-jhd {
+    color: #000000;
+    font-family: Times New Roman, 'Source Sans Pro';
+    font-size: 4rem;
+    font-weight: 400;
+    height: 5.1rem;
+    left: 47.6rem;
+    line-height: 1.2575;
+    position: absolute;
+    top: 11.8rem;
+    white-space: nowrap;
+    width: 39.8rem;
+    
+  }
+  
+  
+  .memorial-qg7 {
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  /*
+    .auto-group-ukjz-Fjq {
+      align-items: center;
+      background-color: #2e276d;
+      box-shadow: 0 0.6rem 2.6rem rgba(0, 0, 0, 0.25);
+      box-sizing: border-box;
+      display: flex;
+      flex-shrink: 0;
+      height: 8rem;
+      padding: 0.7rem 3.55rem 1rem 5.3rem;
+      width: 100%;
+  */
+      .auto-group-my3r-web {
+        background-image: url('/api/try-prod-us-east-2-first-cluster/projects/M7jjK5bwQt2WRXDgWXtrsK/files/image/89f397cf477663221a5fc1f94adfe39d162cc27e');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        flex-shrink: 0;
+        height: 100%;
+        margin-right: 4.3rem;
+  
+        .image-9-Gwm {
+          height: 6.3rem;
+          object-fit: cover;
+          vertical-align: top;
+          width: 6.8rem;
+        }
+      }
+      .line-6-x3u {
+        background-color: #ffffff;
+        flex-shrink: 0;
+        height: 6rem;
+        margin: 0.3rem 5.85rem 0rem 0rem;
+        width: 0.1rem;
+      }
+      .auto-group-fuby-TFZ {
+        flex-shrink: 0;
+        height: calc(100% - 2.6rem);
+        margin: 1.5rem 5.15rem 1.1rem 0rem;
+        position: relative;
+        width: 5.2rem;
+  
+        .incio-NNX {
+          align-items: center;
+          color: #ffffff;
+          display: flex;
+          font-family: Anton, 'Source Sans Pro';
+          font-size: 2.4rem;
+          font-weight: 400;
+          height: 3.7rem;
+          justify-content: center;
+          left: 0;
+          line-height: 1.5075;
+          position: absolute;
+          top: 0;
+          white-space: nowrap;
+          width: 5.2rem;
+        }
+        .incio-R5u {
+          align-items: center;
+          color: #ffffff;
+          cursor: pointer;
+          display: flex;
+          font-family: Anton, 'Source Sans Pro';
+          font-size: 2.4rem;
+          font-weight: 400;
+          height: 3.7rem;
+          justify-content: center;
+          left: 0;
+          line-height: 1.5075;
+          position: absolute;
+          top: 0;
+          white-space: nowrap;
+          width: 5.2rem;
+        }
+      }
+      .auto-group-kffq-J9h {
+        flex-shrink: 0;
+        height: calc(100% - 2.6rem);
+        margin: 1.6rem 5.5rem 1rem 0rem;
+        position: relative;
+        width: 5.6rem;
+  
+        .ideais-25h {
+          align-items: center;
+          color: #ffffff;
+          display: flex;
+          font-family: Anton, 'Source Sans Pro';
+          font-size: 2.4rem;
+          font-weight: 400;
+          height: 3.7rem;
+          justify-content: center;
+          left: 0;
+          line-height: 1.5075;
+          position: absolute;
+          top: 0;
+          white-space: nowrap;
+          width: 5.6rem;
+        }
+        .ideais-XHM {
+          align-items: center;
+          color: #ffffff;
+          cursor: pointer;
+          display: flex;
+          font-family: Anton, 'Source Sans Pro';
+          font-size: 2.4rem;
+          font-weight: 400;
+          height: 3.7rem;
+          justify-content: center;
+          left: 0;
+          line-height: 1.5075;
+          position: absolute;
+          top: 0;
+          white-space: nowrap;
+          width: 5.6rem;
+        }
+      }
+      .auto-group-xyxx-2E7 {
+        flex-shrink: 0;
+        height: calc(100% - 2.6rem);
+        margin: 1.5rem 7.1rem 1.1rem 0rem;
+        position: relative;
+        width: 9.6rem;
+  
+        .memorial-juD {
+          align-items: center;
+          color: #ffffff;
+          display: flex;
+          font-family: Anton, 'Source Sans Pro';
+          font-size: 2.4rem;
+          font-weight: 400;
+          height: 3.7rem;
+          justify-content: center;
+          left: 0;
+          line-height: 1.5075;
+          position: absolute;
+          top: 0;
+          white-space: nowrap;
+          width: 9.6rem;
+        }
+        .memorial-2tK {
+          align-items: center;
+          color: #ffffff;
+          display: flex;
+          font-family: Anton, 'Source Sans Pro';
+          font-size: 2.4rem;
+          font-weight: 400;
+          height: 3.7rem;
+          justify-content: center;
+          left: 0;
+          line-height: 1.5075;
+          position: absolute;
+          top: 0;
+          white-space: nowrap;
+          width: 9.6rem;
+        }
+      }
+      .auto-group-uvsm-L8K {
+        flex-shrink: 0;
+        height: calc(100% - 2.6rem);
+        margin: 1.6rem 66.25rem 1rem 0rem;
+        position: relative;
+        width: 10.6rem;
+  
+        .discusses-Fm5 {
+          align-items: center;
+          color: #ffffff;
+          display: flex;
+          font-family: Anton, 'Source Sans Pro';
+          font-size: 2.4rem;
+          font-weight: 400;
+          height: 3.7rem;
+          justify-content: center;
+          left: 0;
+          line-height: 1.5075;
+          position: absolute;
+          top: 0;
+          white-space: nowrap;
+          width: 10.6rem;
+        }
+        .discusses-mDd {
+          align-items: center;
+          color: #ffffff;
+          cursor: pointer;
+          display: flex;
+          font-family: Anton, 'Source Sans Pro';
+          font-size: 2.4rem;
+          font-weight: 400;
+          height: 3.7rem;
+          justify-content: center;
+          left: 0;
+          line-height: 1.5075;
+          position: absolute;
+          top: 0;
+          white-space: nowrap;
+          width: 10.6rem;
+        }
+      }
+      .iconoir-nav-arrow-down-UNw {
+        flex-shrink: 0;
+        height: 1.525rem;
+        margin-top: 0.6rem;
+        object-fit: contain;
+        vertical-align: top;
+        width: 3.1rem;
+      }
+    }
+    .auto-group-isa3-xJ7 {
+      align-items: center;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      padding: 8.6rem 8.9rem 11.2rem 6.6rem;
+      width: 100%;
+  
+      .auto-group-tnzf-5dd {
+        align-items: flex-end;
+        display: flex;
+        flex-shrink: 0;
+        margin: 0rem 1.4rem 9.3rem 0rem;
+        width: calc(100% - 1.4rem);
+      }
+        .image-13-bM5 {
+          border-radius: 1.5rem;
+          flex-shrink: 0;
+          height: 43.6rem;
+          margin: 0rem 5rem 1.9rem 0rem;
+          object-fit: cover;
+          vertical-align: top;
+          width: 29.1rem;
+          top: 17;
+        }
+        .auto-group-lihq-VhM {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          flex-shrink: 0;
+        }
+          .meu-nome-enas-SMh {
+            color: #000000;
+            flex-shrink: 0;
+            font-family: Tienne, 'Source Sans Pro';
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.3425;
+            margin: 0rem 0rem 4.3rem 3.3rem;
+            white-space: nowrap;
+          }
+          .nascido-em-5-de-novembro-de-1938-enas-ferreira-carneiro-foi-um-grande-polmata-brasileiro-se-graduou-se-como-terceiro-sargento-auxiliar-de-anestesia-no-exercito-brasileiro-do-por-meio-da-escola-de-sade-do-exrcito-licenciou-se-em-matemtica-e-fsica-formado-na-faculdade-de-filosofia-cincias-e-letras-da-universidade-do-estado-da-guanabara-uerj-recebeu-o-titulo-de-mestre-em-cardiologia-na-universidade-federal-do-rio-de-janeiro-e-foi-condecorado-com-a-medalha-marechal-hermes-faleceu-dia-6-de-maio-de-2007-devido-a-leucemia-se-imortalizando-na-histria-da-poltica-brasileira-pela-criao-do-prona-sua-candidatura-para-presidente-deputado-e-com-uma-carreira-impecvel-iq1 {
+            color: #000000;
+            flex-shrink: 0;
+            font-family: Jacques Francois, 'Source Sans Pro';
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 1.3188476562;
+            max-width: 47rem;
+            margin-bottom: 190px;
+      }
+      .auto-group-cd9u-NGb {
+        background-color: #007f0e;
+        border-radius: 1rem;
+        box-sizing: border-box;
+        flex-shrink: 0;
+        height: 7.5rem;
+        margin-left: 3.9rem;
+        padding: 2.4rem 3.65rem 2.5rem 3.85rem;
+        width: 82.2rem;
+      }
+        .brasileiros-juntos-podemos-transformar-nossa-realidade-e-construir-um-futuro-melhor-H8f {
+          color: #ffffff;
+          font-family: Tienne, 'Source Sans Pro';
+          font-size: 2.1rem;
+          font-weight: 400;
+          line-height: 1.3425;
+          max-width: 118.7rem;
+          text-align: center;
+        }
+      }
+    
+    .auto-group-pmx1-8uy {
+      align-items: center;
+      background-color: #2e276d;
+      box-sizing: border-box;
+      display: flex;
+      flex-shrink: 0;
+      padding: 1rem 15rem 1rem 9rem;
+      width: 100%;
+    }
+      .prona-edR {
+        color: #ffffff;
+        flex-shrink: 0;
+        font-family: Tienne, 'Source Sans Pro';
+        font-size: 1.2rem;
+        font-weight: 900;
+        line-height: 1.3425;
+        margin: 0rem 6.6rem 0.103rem 0rem;
+        white-space: nowrap;
+      }
+      .line-9-Arf {
+        background-color: #ffffff;
+        flex-shrink: 0;
+        height: 2.8029rem;
+        margin-right: 14.6rem;
+        width: 0.1rem;
+      }
+      .partido-da-reedificao-da-ordem-nacional-uZM {
+        align-items: center;
+        color: #ffffff;
+        display: flex;
+        flex-shrink: 0;
+        font-family: Times New Roman, 'Source Sans Pro';
+        font-size: 1.2rem;
+        font-weight: 400;
+        justify-content: center;
+        line-height: 1.2575;
+        margin-bottom: 0.1029rem;
+        white-space: nowrap;
+      }
+  
+  
+  .discusses-9aT {
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  
+    .auto-group-ezts-Zu5 {
+      flex-shrink: 0;
+      height: 15.3rem;
+      position: relative;
+      width: 100%;
+  
+      .rectangle-1-CqZ {
+        background-color: #2e276d;
+        box-shadow: 0 0.6rem 2.6rem rgba(0, 0, 0, 0.25);
+        height: 8rem;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 144rem;
+      }
+      .image-1-fDM {
+        height: 6.3rem;
+        left: 5.3rem;
+        object-fit: cover;
+        position: absolute;
+        top: 0.7rem;
+        vertical-align: top;
+        width: 6.8rem;
+      }
+      .incio-Z3q {
+        align-items: center;
+        color: #ffffff;
+        display: flex;
+        font-family: Anton, 'Source Sans Pro';
+        font-size: 2.4rem;
+        font-weight: 400;
+        height: 3.7rem;
+        justify-content: center;
+        left: 22.35rem;
+        line-height: 1.5075;
+        position: absolute;
+        top: 2.2rem;
+        white-space: nowrap;
+        width: 5.2rem;
+      }
+      .memorial-zQ3 {
+        align-items: center;
+        color: #ffffff;
+        display: flex;
+        font-family: Anton, 'Source Sans Pro';
+        font-size: 2.4rem;
+        font-weight: 400;
+        height: 3.7rem;
+        justify-content: center;
+        left: 43.8rem;
+        line-height: 1.5075;
+        position: absolute;
+        top: 2.2rem;
+        white-space: nowrap;
+        width: 9.6rem;
+      }
+      .ideais-g1y {
+        align-items: center;
+        color: #ffffff;
+        display: flex;
+        font-family: Anton, 'Source Sans Pro';
+        font-size: 2.4rem;
+        font-weight: 400;
+        height: 3.7rem;
+        justify-content: center;
+        left: 32.7rem;
+        line-height: 1.5075;
+        position: absolute;
+        top: 2.3rem;
+        white-space: nowrap;
+        width: 5.6rem;
+      }
+      .discusses-88s {
+        align-items: center;
+        color: #ffffff;
+        display: flex;
+        font-family: Anton, 'Source Sans Pro';
+        font-size: 2.4rem;
+        font-weight: 400;
+        height: 3.7rem;
+        justify-content: center;
+        left: 60.5rem;
+        line-height: 1.5075;
+        position: absolute;
+        top: 2.3rem;
+        white-space: nowrap;
+        width: 10.6rem;
+      }
+      .image-9-C8j {
+        height: 6.3rem;
+        left: 5.3rem;
+        object-fit: cover;
+        position: absolute;
+        top: 0.7rem;
+        vertical-align: top;
+        width: 6.8rem;
+      }
+      .incio-KDM {
+        align-items: center;
+        color: #ffffff;
+        cursor: pointer;
+        display: flex;
+        font-family: Anton, 'Source Sans Pro';
+        font-size: 2.4rem;
+        font-weight: 400;
+        height: 3.7rem;
+        justify-content: center;
+        left: 22.35rem;
+        line-height: 1.5075;
+        position: absolute;
+        top: 2.2rem;
+        white-space: nowrap;
+        width: 5.2rem;
+      }
+      .memorial-oPR {
+        align-items: center;
+        color: #ffffff;
+        cursor: pointer;
+        display: flex;
+        font-family: Anton, 'Source Sans Pro';
+        font-size: 2.4rem;
+        font-weight: 400;
+        height: 3.7rem;
+        justify-content: center;
+        left: 43.8rem;
+        line-height: 1.5075;
+        position: absolute;
+        top: 2.2rem;
+        white-space: nowrap;
+        width: 9.6rem;
+      }
+      .ideais-seB {
+        align-items: center;
+        color: #ffffff;
+        cursor: pointer;
+        display: flex;
+        font-family: Anton, 'Source Sans Pro';
+        font-size: 2.4rem;
+        font-weight: 400;
+        height: 3.7rem;
+        justify-content: center;
+        left: 32.7rem;
+        line-height: 1.5075;
+        position: absolute;
+        top: 2.3rem;
+        white-space: nowrap;
+        width: 5.6rem;
+      }
+      .discusses-A7V {
+        align-items: center;
+        color: #ffffff;
+        display: flex;
+        font-family: Anton, 'Source Sans Pro';
+        font-size: 2.4rem;
+        font-weight: 400;
+        height: 3.7rem;
+        justify-content: center;
+        left: 60.5rem;
+        line-height: 1.5075;
+        position: absolute;
+        top: 2.3rem;
+        white-space: nowrap;
+        width: 10.6rem;
+      }
+      .line-6-qUX {
+        background-color: #ffffff;
+        height: 6rem;
+        left: 16.4rem;
+        position: absolute;
+        top: 1rem;
+        width: 0.1rem;
+      }
+    }
+    .auto-group-ypnb-Z9d {
+      flex-shrink: 0;
+      height: 221.4rem;
+      position: relative;
+      width: 100%;
+  
+      .auto-group-jmcw-sAK {
+        height: 48.8rem;
+        left: 5.3rem;
+        position: absolute;
+        top: 0.2rem;
+        width: 131.6rem;
+  
+        .discussao-conceito-ilustracao-ideia-para-pagina-de-destino-modelo-conversa-social-organizando-acordo-falando-dialogo-como-comunicacao-on-line-compartilhamento-de-informacoes-desenhado-a-mao-estilo-plano-vetor-1-Ncs {
+          height: 44.8rem;
+          left: 58.2rem;
+          object-fit: cover;
+          position: absolute;
+          top: 4rem;
+          vertical-align: top;
+          width: 73.4rem;
+        }
+        .rectangle-19-QZZ {
+          background-color: #ffe311;
+          border-radius: 1rem;
+          height: 4rem;
+          left: 0;
+          position: absolute;
+          top: 33.6rem;
+          width: 23.1rem;
+        }
+        /*
+        .seja-bem-vindo-neste-frum-temos-o-objetivo-de-disponibilizar-um-espao-para-que-nossos-leitores-possam-dar-suas-opinies-sobre-tpicos-feitos-pelo-mesmos-aproveite-vno {
+          color: #000000;
+          font-family: Tienne, 'Source Sans Pro';
+          font-size: 1.5rem;
+          font-weight: 400;
+          height: 32.2rem;
+          left: 92rem;
+          line-height: 1.2575;
+          position: absolute;
+          top: 20.6rem;  
+          width: 40rem;
+        }
+        */
+        .frum-de-discusses-YpB {
+          color: #000000;
+          font-family: Tienne, 'Source Sans Pro';
+          font-size: 4rem;
+          font-weight: 400;
+          height: 5.4rem;
+          left: 0;
+          line-height: 1.3425;
+          position: absolute;
+          top: 0;
+          white-space: nowrap;
+          width: 42.2rem;
+        }
+        .line-md-menu-to-close-alt-transition-Eh1 {
+          height: 1.9799rem;
+          left: 1.0028rem;
+          object-fit: contain;
+          position: absolute;
+          top: 34.5028rem;
+          vertical-align: top;
+          width: 1.9799rem;
+        }
+        .adicionar-tpico-j7y {
+          color: #000000;
+          font-family: Tienne, 'Source Sans Pro';
+          font-size: 1.793rem;
+          font-weight: 900;
+          height: 2.5rem;
+          left: 4.8rem;
+          line-height: 1.3425;
+          position: absolute;
+          top: 34.3rem;
+          white-space: nowrap;
+          width: 16.8rem;
+        }
+      }
+      .line-9-D39 {
+        background-color: #000000;
+        height: 0.1rem;
+        left: 5.2rem;
+        position: absolute;
+        top: 56.3rem;
+        width: 133.7rem;
+      }
+      .auto-group-9qbd-vCT {
+        align-items: flex-start;
+        display: flex;
+        height: 8.1rem;
+        left: 9.5rem;
+        position: absolute;
+        top: 63.6rem;
+        width: 124.4rem;
+  
+        .ellipse-5-ED9 {
+          background-image: url('/api/try-prod-us-east-2-first-cluster/projects/M7jjK5bwQt2WRXDgWXtrsK/files/image/0b0744b95d60e8b2cfef12d09367120f7a9f340e');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          border-radius: 3.3rem;
+          flex-shrink: 0;
+          height: 6.6rem;
+          margin-right: 3.1rem;
+          width: 6.6rem;
+        }
+        .estrela-incrvel-fanpage-do-prona-adoro-ver-como-vocs-resgatam-a-histria-poltica-e-mantm-viva-a-memria-desse-partido-maravilhoso-encontrar-um-espao-que-celebra-a-diversidade-de-opinies-e-mantm-viva-a-chama-do-engajamento-poltico-parabns-pelo-excelente-trabalho-iPD {
+          color: #000000;
+          flex-shrink: 0;
+          font-family: Tienne, 'Source Sans Pro';
+          font-size: 2rem;
+          font-weight: 400;
+          line-height: 1.3425;
+          max-width: 114.7rem;
+        }
+      }
+      .auto-group-w6yq-fSs {
+        align-items: flex-start;
+        display: flex;
+        height: 8.1rem;
+        left: 9.5rem;
+        position: absolute;
+        top: 95.7rem;
+        width: 123.2rem;
+      }
+        .ellipse-6-n1h {
+          background-image: url('/api/try-prod-us-east-2-first-cluster/projects/M7jjK5bwQt2WRXDgWXtrsK/files/image/e8b565de3f944b9c79f91efa6e4c9d63c0dd9394');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          border-radius: 3.3rem;
+          flex-shrink: 0;
+          height: 6.6rem;
+          margin-right: 3.1rem;
+          width: 6.6rem;
+        }
+        .paulo-esta-fanpage-um-verdadeiro-tesouro-de-informaes-histricas-incrvel-ver-fotos-vdeos-e-depoimentos-que-nos-transportam-para-aquela-poca-as-postagens-so-sempre-interessantes-e-bem-pesquisadas-continuem-com-o-excelente-trabalho-de-preservar-a-histria-poltica-do-pas-62P {
+          color: #000000;
+          flex-shrink: 0;
+          font-family: Tienne, 'Source Sans Pro';
+          font-size: 2rem;
+          font-weight: 400;
+          line-height: 1.3425;
+          max-width: 113.5rem;
+        }
+      }
+      .auto-group-mau1-CDq {
+        align-items: flex-start;
+        display: flex;
+        height: 8.1rem;
+        left: 9.5rem;
+        position: absolute;
+        top: 127.6rem;
+        width: 123.9rem;
+      }
+        .ellipse-7-7bh {
+          background-image: url('/api/try-prod-us-east-2-first-cluster/projects/M7jjK5bwQt2WRXDgWXtrsK/files/image/0b0744b95d60e8b2cfef12d09367120f7a9f340e');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          border-radius: 3.3rem;
+          flex-shrink: 0;
+          height: 6.6rem;
+          margin-right: 3.1rem;
+          width: 6.6rem;
+        }
+        .ana-a-fanpage-do-prona-um-verdadeiro-achado-como-entusiasta-da-poltica-fico-encantada-com-o-contedo-valioso-que-vocs-compartilham-notvel-o-cuidado-e-a-dedicao-em-manter-viva-a-histria-desse-partido-obrigada-por-proporcionar-um-espao-to-enriquecedor-e-informativo-Dud {
+          color: #000000;
+          flex-shrink: 0;
+          font-family: Tienne, 'Source Sans Pro';
+          font-size: 2rem;
+          font-weight: 400;
+          line-height: 1.3425;
+          max-width: 114.2rem;
+        }
+      }
+      .auto-group-35qm-bvB {
+        align-items: flex-start;
+        display: flex;
+        height: 8.1rem;
+        left: 9.5rem;
+        position: absolute;
+        top: 159.5rem;
+        width: 124.9rem;
+      }
+        .ellipse-8-KrB {
+          background-image: url('/api/try-prod-us-east-2-first-cluster/projects/M7jjK5bwQt2WRXDgWXtrsK/files/image/0b0744b95d60e8b2cfef12d09367120f7a9f340e');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          border-radius: 3.3rem;
+          flex-shrink: 0;
+          height: 6.6rem;
+          margin-right: 3.1rem;
+          width: 6.6rem;
+        }
+        .laura-sou-f-incondicional-do-prona-e-emocionante-ver-como-vocs-resgatam-a-memria-desse-partido-e-nos-fazem-refletir-sobre-a-poltica-da-poca-as-postagens-so-sempre-interessantes-e-bem-organizadas-e-a-interao-com-os-seguidores-tima-continuem-com-esse-trabalho-incrvel-drs {
+          color: #000000;
+          flex-shrink: 0;
+          font-family: Tienne, 'Source Sans Pro';
+          font-size: 2rem;
+          font-weight: 400;
+          line-height: 1.3425;
+          max-width: 115.2rem;
+        }
+      
+      .auto-group-dofy-S3d {
+        align-items: flex-start;
+        display: flex;
+        height: 11.5rem;
+        left: 9.5rem;
+        position: absolute;
+        top: 191.4rem;
+        width: 120rem;
+      }
+        .auto-group-xupo-kKD {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          flex-shrink: 0;
+          height: 100%;
+          margin-right: 3.1rem;
+          width: 6.6rem;
+        }
+          .ellipse-9-sud {
+            background-image: url('/api/try-prod-us-east-2-first-cluster/projects/M7jjK5bwQt2WRXDgWXtrsK/files/image/e8b565de3f944b9c79f91efa6e4c9d63c0dd9394');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 3.3rem;
+            flex-shrink: 0;
+            height: 6.6rem;
+            margin-bottom: 1.1rem;
+            width: 100%;
+          }
+          .mdi-like-dislike-outline-bKq {
+            flex-shrink: 0;
+            height: 3.8rem;
+            margin-left: 0.1rem;
+            object-fit: contain;
+            vertical-align: top;
+            width: 3.5rem;
+          }
+        
+        .carlos-parabns-fanpage-do-prona-de-1989-por-trazer-tona-a-histria-poltica-do-pas-uma-iniciativa-louvvel-que-nos-ajuda-a-entender-e-refletir-sobre-o-passado-a-diversidade-de-contedo-impressionante-abrangendo-desde-discursos-emblemticos-at-entrevistas-com-figuras-importantes-daquele-tempo-estou-ansioso-por-mais-postagens-inspiradoras-Wxb {
+          color: #000000;
+          flex-shrink: 0;
+          font-family: Tienne, 'Source Sans Pro';
+          font-size: 2rem;
+          font-weight: 400;
+          line-height: 1.3425;
+          max-width: 110.3rem;
+        }
+      
+      .mdi-like-dislike-outline-GaP {
+        height: 3.8rem;
+        left: 11.1rem;
+        object-fit: contain;
+        position: absolute;
+        top: 71.7rem;
+        vertical-align: top;
+        width: 3.5rem;
+      }
+      .mdi-like-dislike-outline-PQ7 {
+        height: 3.8rem;
+        left: 11.1rem;
+        object-fit: contain;
+        position: absolute;
+        top: 103.8rem;
+        vertical-align: top;
+        width: 3.5rem;
+      }
+      .mdi-like-dislike-outline-75D {
+        height: 3.8rem;
+        left: 11.1rem;
+        object-fit: contain;
+        position: absolute;
+        top: 135.7rem;
+        vertical-align: top;
+        width: 3.5rem;
+      }
+      .mdi-like-dislike-outline-qG7 {
+        height: 3.8rem;
+        left: 11.1rem;
+        object-fit: contain;
+        position: absolute;
+        top: 167.6rem;
+        vertical-align: top;
+        width: 3.5rem;
+      }
+      .line-10-ZT1 {
+        background-color: #000000;
+        height: 0.1rem;
+        left: 7rem;
+        position: absolute;
+        top: 180.2rem;
+        width: 129.9001rem;
+      }
+      .line-12-tEP {
+        background-color: #000000;
+        height: 0.1rem;
+        left: 7rem;
+        position: absolute;
+        top: 146.6rem;
+        width: 129.9001rem;
+      }
+      .line-13-pNw {
+        background-color: #000000;
+        height: 0.1rem;
+        left: 7rem;
+        position: absolute;
+        top: 115.2rem;
+        width: 129.9001rem;
+      }
+      .line-14-9w1 {
+        background-color: #000000;
+        height: 0.1rem;
+        left: 7rem;
+        position: absolute;
+        top: 85.5rem;
+        width: 129.9001rem;
+      }
+      .line-11-VV5 {
+        background-color: #000000;
+        height: 0.1rem;
+        left: 7rem;
+        position: absolute;
+        top: 215.3rem;
+        width: 129.9001rem;
+      }
+      .comentar-pXM {
+        color: #000000;
+        font-family: Tienne, 'Source Sans Pro';
+        font-size: 2rem;
+        font-weight: 700;
+        height: 2.7rem;
+        left: 66.7rem;
+        line-height: 1.3425;
+        position: absolute;
+        top: 80.8rem;
+        white-space: nowrap;
+        width: 10.6rem;
+      }
+      .comentar-7WT {
+        color: #000000;
+        font-family: Tienne, 'Source Sans Pro';
+        font-size: 2rem;
+        font-weight: 700;
+        height: 2.7rem;
+        left: 66.7rem;
+        line-height: 1.3425;
+        position: absolute;
+        top: 110.7rem;
+        white-space: nowrap;
+        width: 10.6rem;
+      }
+      .comentar-RGF {
+        color: #000000;
+        font-family: Tienne, 'Source Sans Pro';
+        font-size: 2rem;
+        font-weight: 700;
+        height: 2.7rem;
+        left: 66.7rem;
+        line-height: 1.3425;
+        position: absolute;
+        top: 142.7rem;
+        white-space: nowrap;
+        width: 10.6rem;
+      }
+      .comentar-WHh {
+        color: #000000;
+        font-family: Tienne, 'Source Sans Pro';
+        font-size: 2rem;
+        font-weight: 700;
+        height: 2.7rem;
+        left: 66.7rem;
+        line-height: 1.3425;
+        position: absolute;
+        top: 176.1rem;
+        white-space: nowrap;
+        width: 10.6rem;
+      }
+      .comentar-cLj {
+        color: #000000;
+        font-family: Tienne, 'Source Sans Pro';
+        font-size: 2rem;
+        font-weight: 700;
+        height: 2.7rem;
+        left: 66.7rem;
+        line-height: 1.3425;
+        position: absolute;
+        top: 211.3rem;
+        white-space: nowrap;
+        width: 10.6rem;
+      }
+    
+    .auto-group-ppgs-VfR {
+      align-items: center;
+      background-color: #2e276d;
+      box-sizing: border-box;
+      display: flex;
+      flex-shrink: 0;
+      padding: 7.2rem 25rem 7.197rem 19rem;
+      width: 100%;
+    }
+      .prona-QnP {
+        color: #ffffff;
+        flex-shrink: 0;
+        font-family: Tienne, 'Source Sans Pro';
+        font-size: 3.2rem;
+        font-weight: 900;
+        line-height: 1.3425;
+        margin: 0rem 6.6rem 0.103rem 0rem;
+        white-space: nowrap;
+      }
+      .line-8-7wh {
+        background-color: #ffffff;
+        flex-shrink: 0;
+        height: 6.8029rem;
+        margin-right: 14.6rem;
+        width: 0.1rem;
+      }
+      .partido-da-reedificao-da-ordem-nacional-Syy {
+        align-items: center;
+        color: #ffffff;
+        display: flex;
+        flex-shrink: 0;
+        font-family: Times New Roman, 'Source Sans Pro';
+        font-size: 3.2rem;
+        font-weight: 400;
+        justify-content: center;
+        line-height: 1.2575;
+        margin-bottom: 0.1029rem;
+        white-space: nowrap;
+      }
+
+  
+  
+
+

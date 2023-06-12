@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Página Inicial - PRONA</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* CSS inline */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .background {
+      background: url('') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      position: relative;
+      z-index: -1;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5);
+      z-index: -1;
+    }
+
+    .header {
+      background-color: #057d46
+
+;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Barra de navegação */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #172d7c;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 50px;
+      z-index: 9999;
+      width: 100vw;
+    }
+
+    .navbar__logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar__logo img {
+      height: 50px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    .navbar__logo h1 {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar__menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .navbar__menu a {
+      color: #fff;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin: 0 20px;
+      padding: 10px 0;
+      position: relative;
+    }
+
+    .navbar__menu a:hover {
+      color: #f4d30c;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .navbar__menu a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      width: 100%;
+      background-color: #fff;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar__menu a:hover::after {
+      transform: scaleX(1);
+    }
+
+    body {
+  color: rgb(255, 255, 255);
+}
+
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__logo">
+      <img src="Prona 2.0.png" alt="Logo">
+      <h1>PRONA</h1>
+    </div>
+    <div class="navbar__menu">
+      <a href="Início.html">Início</a>
+      <a href="Ideais.html">Ideais</a>
+      <a href="Memorial.html">Memorial</a>
+      <a href="Discussão.html">Discussão</a>
+       <a href="Referências.html">Referências</a>
+      <a href="Cadastro.html">Cadastre-se</a>
+    </div>
+  </nav>
+  <head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="container-login">
+        <div class="wrap-login">
+          <form class="login-form">
+            <span class="login-form-title">
+              Faça o login
+            </span>
+  
+            <div class="wrap-input margin-top-35 margin-bottom-35">
+              <input class="input-form" type="text" name="email" autocomplete="off">
+              <span class="focus-input-form" data-placeholder="E-mail"></span>
+            </div>
+  
+            <div class="wrap-input margin-bottom-35">
+              <input class="input-form" type="password" name="password">
+              <span class="focus-input-form" data-placeholder="Senha"></span>
+            </div>
+  
+            <div class="container-login-form-btn">
+              <button class="login-form-btn">
+                Login
+              </button>
+            </div>
+  
+            <ul class="login-utils">
+              <li class="margin-bottom-8 margin-top-8">
+                <span class="text1">
+                  Esqueceu sua
+                </span>
+  
+                <a href="#" class="text2">
+                  senha?
+                </a>
+              </li>
+  
+              <li>
+                <span class="text1">
+                  Não tem conta?
+                </span>
+  
+                <a href="#" class="text2">
+                  Criar
+                </a>
+              </li>
+            </ul>
+          </form>
+        </div>
+        <img src="Design sem nome.png" width="300" height="300" class="margin-left-50" />
+      </div>
+    </div>
+    
+    <button id="loginButton" onclick="toggleLoginOptions()">Login</button>
+    <div id="loginOptions" style="display: none;">
+      <button onclick="loginWithGoogle()">Login com Google</button>
+      <button onclick="loginWithFacebook()">Login com Facebook</button>
+    </div>      
+    <script>
+      let inputs = document.getElementsByClassName('input-form');
+      for (let input of inputs) {
+        input.addEventListener("blur", function() {
+          if(input.value.trim() != ""){
+            input.classList.add("has-val");
+          } else {
+            input.classList.remove("has-val");
+          }
+        });
+      }
+    </script>
+    <div class="floating-buttons">
+      <div class="floating-buttons">
+        <a href="https://api.whatsapp.com/your-whatsapp-link" class="whatsapp-button" target="_blank"><i class="fab fa-whatsapp"></i> T</a>
+        <a href="https://www.facebook.com/your-facebook-page" class="facebook-button" target="_blank"><i class="fab fa-facebook"></i> F</a>
+      </div>
+  </body>
